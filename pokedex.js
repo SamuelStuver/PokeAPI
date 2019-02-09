@@ -34,10 +34,17 @@ class Pokemon {
 	
 	show() {
 		console.log(this);
+		console.log('-'.repeat(25));
+		console.log(this.id + ' - ' + capitalize(this.name));
+		console.log(this.types);
+		console.log("Base Exp: " + this.base_experience);
+		console.log("Height: " + this.height/10.0 + " m");
+		console.log("Weight: " + this.weight/10.0 + " kg");
+		console.log('-'.repeat(25));
 	}
 
 }
 
 
-p = new Pokemon({"name":"pikachu", "type":"electric"});
+p = new Pokemon({"id":25,"name":"pikachu", "types":"electric", "base_experience":112, "height":4, "weight":60});
 p.show();

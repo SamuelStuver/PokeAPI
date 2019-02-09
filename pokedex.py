@@ -37,8 +37,8 @@ class Pokemon():
         types = [capitalize(t['type']['name']) for t in self.types]
         print('/'.join(types))
         print("Base Exp: " + str(self.base_experience))
-        print("Height: " + str(self.height))
-        print("Weight: " + str(self.weight))
+        print("Height: " + str(self.height/10.0) + " m")
+        print("Weight: " + str(self.weight/10.0) + " kg")
         print('-' * 25)
 
 
